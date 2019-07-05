@@ -26,6 +26,7 @@
   "rules": {
     "max-lines": ["warn", 100],
     "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/interface-name-prefix": 0,
     "react/jsx-filename-extension": 0
   }
 }
