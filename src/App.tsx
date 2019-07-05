@@ -1,5 +1,5 @@
-import React from "react";
+import React from 'react'
 
-const App = () => <div>CV Template</div>;
+const App = () => <div>CV Template</div>
 
-export default App;
+export default App
