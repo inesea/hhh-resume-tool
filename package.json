@@ -3,16 +3,20 @@
   "name": "cv-template",
   "version": "0.0.0",
   "description": "cv template",
-  "main": "index.ts",
+  "main": "index.tsx",
   "scripts": {
-    "start": "",
+    "start": "parcel src/index.html",
     "test": ""
   },
   "license": "UNLICENSED",
   "dependencies": {
-    "react": "^16.8.6"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "^16.8.4",
+    "parcel": "^1.12.3",
     "typescript": "^3.4.5"
   }
 }
