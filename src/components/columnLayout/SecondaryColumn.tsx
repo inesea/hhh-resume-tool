@@ -1,14 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Column = styled.div`
+const StyledSecondaryColumn = styled.div`
   background: lightBlue;
 `
 
 const SecondaryColumn = () => (
-  <Column>
+  <StyledSecondaryColumn>
     <div>secondary column</div>
-  </Column>
+  </StyledSecondaryColumn>
 )
 
 export default SecondaryColumn

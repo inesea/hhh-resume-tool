@@ -1,19 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
-import MainColumn from './MainColumn'
-import SecondaryColumn from './SecondaryColumn'
 
-const Wrapper = styled.div`
+const StyledColumnLayout = styled.div`
   display: grid;
-  grid-template-columns: 600px 200px;
+  grid-template-columns: 70% 27%;
   grid-gap: 30px;
 `
 
-const ColumnLayout: React.FC<React.HTMLAttributes<{}>> = () => (
-  <Wrapper>
-    <MainColumn />
-    <SecondaryColumn />
-  </Wrapper>
+interface IColumnLayoutProps {
+  children: React.ReactNodeArray
+}
+
+const ColumnLayout = ({ children }: IColumnLayoutProps) => (
+  <StyledColumnLayout>{children}</StyledColumnLayout>
 )
 
 export default ColumnLayout
