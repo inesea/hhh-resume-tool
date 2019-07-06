@@ -9,7 +9,7 @@ import SecondaryColumn from './components/columnLayout/SecondaryColumn'
 const StyledApp = styled.div`
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
-  line-height: 170%;
+  line-height: 1.7;
   color: rgb(48, 48, 48);
 `
 

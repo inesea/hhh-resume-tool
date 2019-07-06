@@ -8,8 +8,9 @@ const MainColumn = () => (
   <StyledMainColumn>
     <MainDetail
       name="inese avota"
+      email="some.email@someemail.com"
       phoneNumber="+44 44 444 44444"
-      summaryText="Software engineer trying to build a cv template... Software engineer trying to build a cv template... Software engineer trying to build a cv template... Software engineer trying to build a cv template... Software engineer trying to build a cv template... "
+      summaryText="Software engineer trying to build a cv template... Software engineer trying to build a cv template... Software engineer trying to build a cv template... Software engineer trying to build a cv template... Software engineer trying to build a cv template... Software engineer trying to build a cv template... Software engineer trying to build a cv template... Software engineer trying to build a cv template... Software engineer trying to build a cv template... "
     />
   </StyledMainColumn>
 )

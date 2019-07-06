@@ -1,22 +1,39 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Name = styled.div``
+const Name = styled.div`
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 70px;
+  text-transform: uppercase;
+`
 
-const PhoneNumber = styled.div``
+const ContactDetails = styled.div`
+  font-size: 12px;
+  color: grey;
+  padding-bottom: 15px;
+`
 
-const SummaryText = styled.div``
+const SummaryText = styled.div`
+  text-align: justify;
+`
 
 interface IMainDetailProps {
   name: string
+  email: string
   phoneNumber: string
   summaryText: string
 }
 
-const MainDetail = ({ name, phoneNumber, summaryText }: IMainDetailProps) => (
+const MainDetail = ({
+  name,
+  email,
+  phoneNumber,
+  summaryText
+}: IMainDetailProps) => (
   <>
     <Name>{name}</Name>
-    <PhoneNumber>{phoneNumber}</PhoneNumber>
+    <ContactDetails>{`${email} | ${phoneNumber}`}</ContactDetails>
     <SummaryText>{summaryText}</SummaryText>
   </>
 )
