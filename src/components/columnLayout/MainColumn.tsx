@@ -1,16 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
 import MainDetail from '../sections/MainDetail'
+import IResume from '../../model/Resume'
 
 const StyledMainColumn = styled.div``
 
-const MainColumn = () => (
+interface IMainColumnProps {
+  resume: IResume
+}
+
+const MainColumn = ({ resume }: IMainColumnProps) => (
   <StyledMainColumn>
     <MainDetail
-      name="inese avota"
-      email="some.email@someemail.com"
-      phoneNumber="+44 44 444 44444"
-      summaryText="Software engineer trying to build a cv template... Software engineer trying to build a cv template... Software engineer trying to build a cv template... Software engineer trying to build a cv template... Software engineer trying to build a cv template... Software engineer trying to build a cv template... Software engineer trying to build a cv template... Software engineer trying to build a cv template... Software engineer trying to build a cv template... "
+      name={resume.basics.name}
+      email={resume.basics.email}
+      phoneNumber={resume.basics.phone}
+      summaryText={resume.basics.summary}
     />
   </StyledMainColumn>
 )

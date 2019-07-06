@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import A4Page from './components/page/A4Page'
-import ColumnLayout from './components/columnLayout/ColumnLayout'
-import MainColumn from './components/columnLayout/MainColumn'
-import SecondaryColumn from './components/columnLayout/SecondaryColumn'
+import Resume from './components/resume/Resume'
+
+// @ts-ignore
+import mockResume from '../mock_data/mockResume'
 
 const StyledApp = styled.div`
   font-family: 'Open Sans', sans-serif;
@@ -15,12 +15,7 @@ const StyledApp = styled.div`
 
 const App = () => (
   <StyledApp>
-    <A4Page>
-      <ColumnLayout>
-        <MainColumn />
-        <SecondaryColumn />
-      </ColumnLayout>
-    </A4Page>
+    <Resume resume={mockResume} />
   </StyledApp>
 )
 
