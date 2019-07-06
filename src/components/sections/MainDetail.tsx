@@ -4,7 +4,6 @@ import styled from 'styled-components'
 const Name = styled.div`
   font-size: 24px;
   font-weight: bold;
-  padding-top: 70px;
   text-transform: uppercase;
 `
 

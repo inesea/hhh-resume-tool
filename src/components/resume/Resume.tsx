@@ -3,7 +3,7 @@ import A4Page from '../page/A4Page'
 import ColumnLayout from '../columnLayout/ColumnLayout'
 import MainColumn from '../columnLayout/MainColumn'
 import SecondaryColumn from '../columnLayout/SecondaryColumn'
-import IResume from '../../model/Resume'
+import { IResume } from '../../model/Resume'
 
 interface IResumeProps {
   resume: IResume

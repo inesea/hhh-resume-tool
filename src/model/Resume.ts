@@ -1,4 +1,4 @@
-export default interface IResume {
+export interface IResume {
   meta: object
   basics: {
     name: string
@@ -13,7 +13,7 @@ export default interface IResume {
   interests: object[]
 }
 
-interface ILanguage {
+export interface ILanguage {
   language: string
   fluency: string
 }

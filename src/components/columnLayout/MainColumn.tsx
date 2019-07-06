@@ -1,9 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import MainDetail from '../sections/MainDetail'
-import IResume from '../../model/Resume'
+import { IResume } from '../../model/Resume'
 
-const StyledMainColumn = styled.div``
+const StyledMainColumn = styled.div`
+  padding-top: 70px;
+`
 
 interface IMainColumnProps {
   resume: IResume
