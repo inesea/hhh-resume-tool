@@ -8,12 +8,18 @@ export interface IResume {
   }
   work: object[]
   education: object[]
-  skills: object[]
   languages: ILanguage[]
-  interests: object[]
+  skills: string[]
+  certificates: ICertificate[]
+  interests: string[]
 }
 
 export interface ILanguage {
-  language: string
+  name: string
   fluency: string
+}
+
+export interface ICertificate {
+  name: string
+  date: string
 }

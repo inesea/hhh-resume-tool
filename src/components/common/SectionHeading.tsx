@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const StyledSectionTitle = styled.div`
   letter-spacing: 5px;
   text-transform: uppercase
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
 `
 

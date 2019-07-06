@@ -2,7 +2,7 @@ module.exports = {
   meta: {
     name: 'mock resume',
     description:
-      'This is a mock resume, structurally mostly based on the JSON Resume schema (https://github.com/jsonresume) (https://jsonresume.org)'
+      'This is a mock resume, structurally somewhat (but not fully) based on the JSON Resume schema (https://jsonresume.org)'
   },
   basics: {
     name: 'Inese Avota',
@@ -81,32 +81,22 @@ module.exports = {
       courses: []
     }
   ],
-  skills: [
-    {
-      name: 'Web Development',
-      level: '',
-      keywords: ['HTML', 'CSS', 'Javascript']
-    },
-    {
-      name: 'Java',
-      level: '',
-      keywords: ['JVM', 'Spring', 'Maven']
-    }
-  ],
   languages: [
     {
-      language: 'English',
+      name: 'English',
       fluency: 'fluent'
     },
     {
-      language: 'German',
+      name: 'German',
       fluency: 'intermediate'
     }
   ],
-  interests: [
+  certificates: [
     {
-      name: 'Wildlife',
-      keywords: ['Cats', 'Unicorns']
+      name: 'Google Cloud Platform basics',
+      date: 'June 2018'
     }
-  ]
+  ],
+  skills: ['Java', 'JavaScript', 'HTML5', 'CSS3', 'Node.js', 'Pancakes', ''],
+  interests: ['cats', 'memes', 'philosophising']
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { IResume } from '../../model/Resume'
-import Languages from '../sections/Languages'
+import SecondarySection from '../sections/SecondarySection'
+import { IResume, ILanguage, ICertificate } from '../../model/Resume'
 
 const StyledSecondaryColumn = styled.div`
   background: lightBlue;
@@ -12,11 +12,32 @@ interface ISecondaryColumnProps {
   resume: IResume
 }
 
+const getLanguagesList = (languages: ILanguage[]) =>
+  languages ? languages.map(item => `${item.name} - ${item.fluency}`) : null
+
+const getCertificatesList = (certificates: ICertificate[]) =>
+  certificates ? certificates.map(item => item.name) : null
+
 const SecondaryColumn = ({ resume }: ISecondaryColumnProps) => {
-  const { languages } = resume
+  const { languages, skills, certificates, interests } = resume
+
+  const languagesList = getLanguagesList(languages)
+  const certificatesList = getCertificatesList(certificates)
+
   return (
     <StyledSecondaryColumn>
-      <Languages languages={languages} />
+      {languagesList && (
+        <SecondarySection title="Languages" listItems={languagesList} />
+      )}
+      {skills && (
+        <SecondarySection title="Tools & Technologies" listItems={skills} />
+      )}
+      {certificatesList && (
+        <SecondarySection title="Certificates" listItems={certificatesList} />
+      )}
+      {interests && (
+        <SecondarySection title="Personal Interests" listItems={interests} />
+      )}
     </StyledSecondaryColumn>
   )
 }
