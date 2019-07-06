@@ -9,7 +9,7 @@ const StyledA4Page = styled.div`
   margin: 0 auto;
   margin-top: 1cm;
   margin-bottom: 1cm;
-  padding: 1cm;
+  padding: 0.5cm 0.5cm 0.5cm 1cm;
 `
 
 interface IA4PageProps {

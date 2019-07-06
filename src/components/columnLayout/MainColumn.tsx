@@ -2,9 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import MainDetail from '../sections/MainDetail'
 
-const StyledMainColumn = styled.div`
-  background: lightGrey;
-`
+const StyledMainColumn = styled.div``
 
 const MainColumn = () => (
   <StyledMainColumn>

@@ -4,7 +4,8 @@ import styled from 'styled-components'
 const StyledColumnLayout = styled.div`
   display: grid;
   grid-template-columns: 70% 27%;
-  grid-gap: 30px;
+  grid-gap: 3%;
+  height: 100%;
 `
 
 interface IColumnLayoutProps {
