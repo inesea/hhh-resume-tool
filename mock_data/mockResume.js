@@ -40,8 +40,8 @@ module.exports = {
       description: '',
       position: 'JavaScript Developer',
       url: '',
-      startDate: '2016-03-01',
-      endDate: '2018-12-01',
+      startDate: 'March 2016',
+      endDate: 'December 2018',
       summary: '',
       highlights: [
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
@@ -58,8 +58,8 @@ module.exports = {
       description: '',
       position: 'Softare Engineer',
       url: '',
-      startDate: '2014-05-01',
-      endDate: '2016-09-01',
+      startDate: 'May 2014',
+      endDate: 'September 2016',
       summary: '',
       highlights: [
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
@@ -75,8 +75,8 @@ module.exports = {
       institution: 'University of Loremipsum',
       area: 'Software Engineering',
       studyType: 'Undergraduate',
-      startDate: '2011-06-01',
-      endDate: '2014-01-01',
+      startDate: 'June 2016',
+      endDate: 'January 2014',
       gpa: '4.5',
       courses: []
     }

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import SectionHeading from '../common/SectionHeading'
+import SectionHeading from './SecondarySectionHeading'
 
 const StyledSecondarySection = styled.div`
   margin-bottom: 40px;

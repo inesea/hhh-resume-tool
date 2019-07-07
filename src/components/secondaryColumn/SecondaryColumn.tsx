@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import SecondarySection from '../sections/SecondarySection'
+import SecondarySection from './components/SecondarySection'
 import { IResume, ILanguage, ICertificate } from '../../model/Resume'
 
 const StyledSecondaryColumn = styled.div`
@@ -30,7 +30,7 @@ const SecondaryColumn = ({ resume }: ISecondaryColumnProps) => {
         <SecondarySection title="Languages" listItems={languagesList} />
       )}
       {skills && (
-        <SecondarySection title="Tools & Technologies" listItems={skills} />
+        <SecondarySection title="Tools &amp; Technologies" listItems={skills} />
       )}
       {certificatesList && (
         <SecondarySection title="Certificates" listItems={certificatesList} />

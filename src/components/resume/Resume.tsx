@@ -1,8 +1,8 @@
 import React from 'react'
 import A4Page from '../page/A4Page'
 import ColumnLayout from '../columnLayout/ColumnLayout'
-import MainColumn from '../columnLayout/MainColumn'
-import SecondaryColumn from '../columnLayout/SecondaryColumn'
+import MainColumn from '../primaryColumn/PrimaryColumn'
+import SecondaryColumn from '../secondaryColumn/SecondaryColumn'
 import { IResume } from '../../model/Resume'
 
 interface IResumeProps {

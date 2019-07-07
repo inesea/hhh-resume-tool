@@ -6,7 +6,7 @@ export interface IResume {
     phone: string
     summary: string
   }
-  work: object[]
+  work: IWork[]
   education: object[]
   languages: ILanguage[]
   skills: string[]
@@ -22,4 +22,14 @@ export interface ILanguage {
 export interface ICertificate {
   name: string
   date: string
+}
+
+export interface IWork {
+  name: string
+  location: string
+  position: string
+  startDate: string
+  endDate: string
+  summary: string
+  highlights: string[]
 }
