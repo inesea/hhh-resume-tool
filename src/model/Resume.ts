@@ -7,7 +7,7 @@ export interface IResume {
     summary: string
   }
   work: IWork[]
-  education: object[]
+  education: IEducation[]
   languages: ILanguage[]
   skills: string[]
   certificates: ICertificate[]
@@ -32,4 +32,15 @@ export interface IWork {
   endDate: string
   summary: string
   highlights: string[]
+}
+
+export interface IEducation {
+  institution: string
+  location: string
+  area: string
+  studyType: string
+  startDate: string
+  endDate: string
+  gpa: string
+  courses: string[]
 }

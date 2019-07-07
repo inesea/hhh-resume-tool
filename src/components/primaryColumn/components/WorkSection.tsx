@@ -1,28 +1,24 @@
 import React from 'react'
-import styled from 'styled-components'
+
+import MainSectionWrapper from './MainSectionWrapper'
 import PrimarySectionHeading from './PrimarySectionHeading'
 import WorkItem from './WorkItem'
 import { IWork } from '../../../model/Resume'
 
-const StyledWorkSection = styled.div`
-  padding-top: 50px;
-  margin-bottom: 40px;
-`
-
 interface IWorkSectionProps {
-  work: IWork[]
+  workList: IWork[]
 }
 
-const WorkSection = ({ work }: IWorkSectionProps) => (
-  <StyledWorkSection>
+const WorkSection = ({ workList }: IWorkSectionProps) => (
+  <MainSectionWrapper>
     <PrimarySectionHeading>Experience</PrimarySectionHeading>
-    {work.map(workItem => (
+    {workList.map(workItem => (
       <WorkItem
         key={`${workItem.position}-${workItem.startDate}`}
         item={workItem}
       />
     ))}
-  </StyledWorkSection>
+  </MainSectionWrapper>
 )
 
 export default WorkSection

@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import MainDetail from './components/MainDetail'
 import WorkSection from './components/WorkSection'
 import { IResume } from '../../model/Resume'
+import EducationSection from './components/EducationSection'
 
 const StyledPrimaryColumn = styled.div`
   padding-top: 70px;
@@ -13,7 +14,7 @@ interface IPrimaryColumnProps {
 }
 
 const PrimaryColumn = ({ resume }: IPrimaryColumnProps) => {
-  const { basics, work } = resume
+  const { basics, work, education } = resume
   return (
     <StyledPrimaryColumn>
       <MainDetail
@@ -22,7 +23,8 @@ const PrimaryColumn = ({ resume }: IPrimaryColumnProps) => {
         phoneNumber={basics.phone}
         summaryText={basics.summary}
       />
-      <WorkSection work={work} />
+      <WorkSection workList={work} />
+      <EducationSection educationList={education} />
     </StyledPrimaryColumn>
   )
 }

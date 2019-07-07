@@ -72,9 +72,20 @@ module.exports = {
   ],
   education: [
     {
+      institution: 'Edinburgh University',
+      location: 'Edinburgh, UK',
+      area: 'Ullamco Laboris Nisi',
+      studyType: 'MSc',
+      startDate: 'June 2011',
+      endDate: 'January 2014',
+      gpa: '4.5',
+      courses: []
+    },
+    {
       institution: 'University of Loremipsum',
+      location: 'Riga, Latvia',
       area: 'Software Engineering',
-      studyType: 'Undergraduate',
+      studyType: 'BSc',
       startDate: 'June 2016',
       endDate: 'January 2014',
       gpa: '4.5',
