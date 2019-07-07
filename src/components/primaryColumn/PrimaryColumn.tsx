@@ -26,5 +26,5 @@ const PrimaryColumn = ({ resume }: IPrimaryColumnProps) => {
     </StyledPrimaryColumn>
   )
 }
-// @ts-ignore
+
 export default PrimaryColumn

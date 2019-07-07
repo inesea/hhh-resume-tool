@@ -5,6 +5,9 @@
     "noEmit": true,
     "target": "ESNext",
     "moduleResolution": "Node",
-    "allowSyntheticDefaultImports": true
-  }
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true
+  },
+  "exclude": ["mock_data", "node_modules", "dist"],
+  "include": ["src/**/*"]
 }
