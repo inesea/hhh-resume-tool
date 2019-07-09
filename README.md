@@ -1,1 +1,1 @@
-# CV Template
+# CV Template & Generator

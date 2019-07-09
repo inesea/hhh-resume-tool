@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Resume from './components/resume/Resume'
+import ExportButton from './components/export/ExportButton'
 
 // @ts-ignore
 import mockResume from '../mock_data/mockResume'
@@ -15,6 +16,7 @@ const StyledApp = styled.div`
 
 const App = () => (
   <StyledApp>
+    <ExportButton />
     <Resume resume={mockResume} />
   </StyledApp>
 )

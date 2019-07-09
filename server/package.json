@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "pdf-generator",
+  "version": "0.0.0",
+  "description": "pdf generator",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "puppeteer": "^1.18.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  }
+}

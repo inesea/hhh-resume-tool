@@ -1,5 +1,8 @@
-node_modules/
-package-lock.json
-.cache/
-dist/
-.vscode/
+client/node_modules/
+client/package-lock.json
+client/.cache/
+client/dist/
+client/.vscode/
+server/node_modules
+server/package-lock.json
+server/.vscode/

@@ -10,12 +10,14 @@ interface IResumeProps {
 }
 
 const Resume = ({ resume }: IResumeProps) => (
-  <A4Page>
-    <ColumnLayout>
-      <MainColumn resume={resume} />
-      <SecondaryColumn resume={resume} />
-    </ColumnLayout>
-  </A4Page>
+  <div id="resume">
+    <A4Page>
+      <ColumnLayout>
+        <MainColumn resume={resume} />
+        <SecondaryColumn resume={resume} />
+      </ColumnLayout>
+    </A4Page>
+  </div>
 )
 
 export default Resume
