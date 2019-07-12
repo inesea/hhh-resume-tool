@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import SecondarySection from './components/SecondarySection'
-import { IResume, ILanguage, ICertificate } from '../../model/Resume'
+import { IResume, ILanguage, ICertificate } from '../../../model/Resume'
 
 const StyledSecondaryColumn = styled.div`
   background: lightBlue;

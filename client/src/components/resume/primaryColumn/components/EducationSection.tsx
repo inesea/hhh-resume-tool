@@ -3,7 +3,7 @@ import React from 'react'
 import MainSectionWrapper from './MainSectionWrapper'
 import PrimarySectionHeading from './PrimarySectionHeading'
 import EducationItem from './EducationItem'
-import { IEducation } from '../../../model/Resume'
+import { IEducation } from '../../../../model/Resume'
 
 interface IEducationSectionProps {
   educationList: IEducation[]

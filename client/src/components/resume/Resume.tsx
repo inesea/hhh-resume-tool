@@ -1,23 +1,30 @@
 import React from 'react'
-import A4Page from '../page/A4Page'
-import ColumnLayout from '../columnLayout/ColumnLayout'
-import MainColumn from '../primaryColumn/PrimaryColumn'
-import SecondaryColumn from '../secondaryColumn/SecondaryColumn'
+import styled from 'styled-components'
+
+import ColumnLayout from './columnLayout/ColumnLayout'
+import PrimaryColumn from './primaryColumn/PrimaryColumn'
+import SecondaryColumn from './secondaryColumn/SecondaryColumn'
+
 import { IResume } from '../../model/Resume'
+
+const StyledResume = styled.div`
+  background: white;
+  width: 21.5cm;
+  height: 28.7cm;
+  padding: 0.5cm 0.5cm 0.5cm 1cm;
+`
 
 interface IResumeProps {
   resume: IResume
 }
 
 const Resume = ({ resume }: IResumeProps) => (
-  <div id="resume">
-    <A4Page>
-      <ColumnLayout>
-        <MainColumn resume={resume} />
-        <SecondaryColumn resume={resume} />
-      </ColumnLayout>
-    </A4Page>
-  </div>
+  <StyledResume>
+    <ColumnLayout>
+      <PrimaryColumn resume={resume} />
+      <SecondaryColumn resume={resume} />
+    </ColumnLayout>
+  </StyledResume>
 )
 
 export default Resume

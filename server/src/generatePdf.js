@@ -7,7 +7,9 @@ async function generatePdf() {
 
     page.setViewport({ width: 1440, height: 900, deviceScaleFactor: 2 })
 
-    await page.goto('http://localhost:1234', { waitUntil: 'networkidle2' })
+    await page.goto('http://localhost:1234/printable', {
+      waitUntil: 'networkidle2'
+    })
 
     const pdf = await page.pdf({
       format: 'A4',

@@ -3,7 +3,7 @@ import React from 'react'
 import MainSectionWrapper from './MainSectionWrapper'
 import PrimarySectionHeading from './PrimarySectionHeading'
 import WorkItem from './WorkItem'
-import { IWork } from '../../../model/Resume'
+import { IWork } from '../../../../model/Resume'
 
 interface IWorkSectionProps {
   workList: IWork[]

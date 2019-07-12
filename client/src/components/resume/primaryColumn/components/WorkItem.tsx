@@ -1,18 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
-import { IEducation } from '../../../model/Resume'
+import { IWork } from '../../../../model/Resume'
 
-const StyledEducationItem = styled.div`
+const StyledWorkItem = styled.div`
   padding-bottom: 30px;
 `
-const Degree = styled.div`
+const Position = styled.div`
   font-weight: bold;
 `
 const LineContainer = styled.div`
   display: flex;
   padding-bottom: 5px;
 `
-const Institution = styled.div`
+const Company = styled.div`
   font-weight: bold;
   color: steelBlue;
   float: left;
@@ -25,21 +25,27 @@ const Dates = styled.div`
   margin-right: 7px;
   font-style: italic;
 `
+const Highlight = styled.div`
+  padding-left: 30px;
+`
 
-interface IEducationItemProps {
+interface IWorkItemProps {
   key: string
-  item: IEducation
+  item: IWork
 }
 
-const EducationItem = ({ key, item }: IEducationItemProps) => (
-  <StyledEducationItem key={key}>
-    <Degree>{`${item.studyType} ${item.area}`}</Degree>
+const WorkItem = ({ key, item }: IWorkItemProps) => (
+  <StyledWorkItem key={key}>
+    <Position>{item.position}</Position>
     <LineContainer>
-      <Institution>{item.institution}</Institution>
+      <Company>{item.name}</Company>
       <Location>{`(${item.location})`}</Location>
       <Dates>{`${item.startDate} - ${item.endDate}`}</Dates>
     </LineContainer>
-  </StyledEducationItem>
+    {item.highlights.map(highlight => (
+      <Highlight>{`* ${highlight}`}</Highlight>
+    ))}
+  </StyledWorkItem>
 )
 
-export default EducationItem
+export default WorkItem

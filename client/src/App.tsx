@@ -1,8 +1,9 @@
 import React from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import styled from 'styled-components'
 
-import Resume from './components/resume/Resume'
-import ExportButton from './components/export/ExportButton'
+import PreviewPage from './views/PreviewPage'
+import PrintablePage from './views/PrintablePage'
 
 // @ts-ignore
 import mockResume from '../mock_data/mockResume'
@@ -16,8 +17,17 @@ const StyledApp = styled.div`
 
 const App = () => (
   <StyledApp>
-    <ExportButton />
-    <Resume resume={mockResume} />
+    <Router>
+      <Route
+        exact
+        path="/"
+        component={() => <PreviewPage resume={mockResume} />}
+      />
+      <Route
+        path="/printable"
+        component={() => <PrintablePage resume={mockResume} />}
+      />
+    </Router>
   </StyledApp>
 )
 

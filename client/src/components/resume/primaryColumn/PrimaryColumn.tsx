@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import MainDetail from './components/MainDetail'
 import WorkSection from './components/WorkSection'
-import { IResume } from '../../model/Resume'
+import { IResume } from '../../../model/Resume'
 import EducationSection from './components/EducationSection'
 
 const StyledPrimaryColumn = styled.div`
