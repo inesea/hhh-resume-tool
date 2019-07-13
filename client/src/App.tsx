@@ -6,7 +6,7 @@ import PreviewPage from './views/PreviewPage'
 import PrintablePage from './views/PrintablePage'
 
 // @ts-ignore
-import mockResume from '../mock_data/mockResume'
+import data from '../data/data'
 
 const StyledApp = styled.div`
   font-family: 'Open Sans', sans-serif;
@@ -18,14 +18,10 @@ const StyledApp = styled.div`
 const App = () => (
   <StyledApp>
     <Router>
-      <Route
-        exact
-        path="/"
-        component={() => <PreviewPage resume={mockResume} />}
-      />
+      <Route exact path="/" component={() => <PreviewPage resume={data} />} />
       <Route
         path="/printable"
-        component={() => <PrintablePage resume={mockResume} />}
+        component={() => <PrintablePage resume={data} />}
       />
     </Router>
   </StyledApp>

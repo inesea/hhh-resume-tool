@@ -3,6 +3,7 @@ client/package-lock.json
 client/.cache/
 client/dist/
 client/.vscode/
+client/data/realResume.json
 server/node_modules
 server/package-lock.json
 server/.vscode/
