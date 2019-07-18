@@ -1,6 +1,8 @@
 import React from 'react'
 
-import Resume from '../components/resume/Resume'
+import Page1 from '../components/resume/Page1'
+import Page2 from '../components/resume/Page2'
+
 import { IResume } from '../model/Resume'
 
 interface IPrintablePageProps {
@@ -8,7 +10,10 @@ interface IPrintablePageProps {
 }
 
 const PrintablePage = ({ resume }: IPrintablePageProps) => (
-  <Resume resume={resume} />
+  <>
+    <Page1 resume={resume} printable />
+    <Page2 resume={resume} printable />
+  </>
 )
 
 export default PrintablePage

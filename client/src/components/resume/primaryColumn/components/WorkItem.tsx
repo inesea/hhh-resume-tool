@@ -25,7 +25,7 @@ const Dates = styled.div`
   margin-right: 7px;
   font-style: italic;
 `
-const Highlight = styled.div`
+const Highlight = styled.li`
   padding-left: 30px;
 `
 
@@ -43,7 +43,7 @@ const WorkItem = ({ key, item }: IWorkItemProps) => (
       <Dates>{`${item.startDate} - ${item.endDate}`}</Dates>
     </LineContainer>
     {item.highlights.map(highlight => (
-      <Highlight>{`* ${highlight}`}</Highlight>
+      <Highlight>{highlight}</Highlight>
     ))}
   </StyledWorkItem>
 )

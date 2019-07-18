@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { IEducation } from '../../../../model/Resume'
 
 const StyledEducationItem = styled.div`
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 `
 const Degree = styled.div`
   font-weight: bold;

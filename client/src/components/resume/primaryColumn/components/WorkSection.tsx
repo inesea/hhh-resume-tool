@@ -7,11 +7,17 @@ import { IWork } from '../../../../model/Resume'
 
 interface IWorkSectionProps {
   workList: IWork[]
+  displayHeading?: boolean
 }
 
-const WorkSection = ({ workList }: IWorkSectionProps) => (
+const WorkSection = ({
+  workList,
+  displayHeading = true
+}: IWorkSectionProps) => (
   <MainSectionWrapper>
-    <PrimarySectionHeading>Experience</PrimarySectionHeading>
+    {displayHeading && (
+      <PrimarySectionHeading>Experience</PrimarySectionHeading>
+    )}
     {workList.map(workItem => (
       <WorkItem
         key={`${workItem.position}-${workItem.startDate}`}

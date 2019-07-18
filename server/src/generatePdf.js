@@ -14,7 +14,7 @@ async function generatePdf() {
     const pdf = await page.pdf({
       format: 'A4',
       printBackground: true,
-      pageRanges: '1'
+      pageRanges: '1, 2'
     })
 
     await browser.close()

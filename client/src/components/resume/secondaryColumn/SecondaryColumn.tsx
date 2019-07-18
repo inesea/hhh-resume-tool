@@ -1,44 +1,78 @@
 import React from 'react'
 import styled from 'styled-components'
 import SecondarySection from './components/SecondarySection'
-import { IResume, ILanguage, ICertificate } from '../../../model/Resume'
+import { IResume } from '../../../model/Resume'
+import { A4_HEIGHT_CM } from '../../../constants/constants'
 
-const StyledSecondaryColumn = styled.div`
-  background: lightBlue;
-  padding-top: 140px;
-  padding-left: 15px;
-`
 interface ISecondaryColumnProps {
   resume: IResume
+  page: number
+  printable: boolean
 }
 
-const getLanguagesList = (languages: ILanguage[]) =>
-  languages ? languages.map(item => `${item.name} - ${item.fluency}`) : null
+interface StyledProps {
+  printable: boolean
+}
 
-const getCertificatesList = (certificates: ICertificate[]) =>
-  certificates ? certificates.map(item => item.name) : null
+const StyledForPage1 = styled.div<StyledProps>`
+  background: #d4e4ed;
+  padding-top: 200px;
+  padding-left: 15px;
+  margin-top: ${props => (props.printable ? '-20px' : '0px')};
+`
 
-const SecondaryColumn = ({ resume }: ISecondaryColumnProps) => {
+const StyledForPage2 = styled.div<StyledProps>`
+  background: #d4e4ed;
+  height: ${A4_HEIGHT_CM + 4}cm;
+  margin-bottom: ${props => (props.printable ? `-20px` : '0px')};
+`
+
+const SecondaryColumn = ({
+  resume,
+  page,
+  printable
+}: ISecondaryColumnProps) => {
   const { languages, skills, certificates, interests } = resume
 
-  const languagesList = getLanguagesList(languages)
-  const certificatesList = getCertificatesList(certificates)
+  const languagesList = languages
+    ? languages.map(item => `${item.name} - ${item.fluency}`)
+    : null
+
+  const certificatesList = certificates
+    ? certificates.map(item => item.name)
+    : null
 
   return (
-    <StyledSecondaryColumn>
-      {languagesList && (
-        <SecondarySection title="Languages" listItems={languagesList} />
+    <>
+      {page === 1 && (
+        <StyledForPage1 printable={printable}>
+          {languagesList && (
+            <SecondarySection title="Languages" listItems={languagesList} />
+          )}
+          {skills && (
+            <SecondarySection
+              title="Tools &amp; Technologies"
+              listItems={skills}
+            />
+          )}
+          {certificatesList && (
+            <SecondarySection
+              title="Certificates"
+              listItems={certificatesList}
+            />
+          )}
+          {interests && (
+            <SecondarySection
+              title="Personal Interests"
+              listItems={interests}
+            />
+          )}
+        </StyledForPage1>
       )}
-      {skills && (
-        <SecondarySection title="Tools &amp; Technologies" listItems={skills} />
-      )}
-      {certificatesList && (
-        <SecondarySection title="Certificates" listItems={certificatesList} />
-      )}
-      {interests && (
-        <SecondarySection title="Personal Interests" listItems={interests} />
-      )}
-    </StyledSecondaryColumn>
+
+      {page === 2 && <StyledForPage2 printable={printable} />}
+    </>
   )
 }
+
 export default SecondaryColumn

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledMainDetail = styled.div`
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 `
 const Name = styled.div`
   font-size: 24px;

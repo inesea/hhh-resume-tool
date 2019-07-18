@@ -25,6 +25,7 @@ export interface ICertificate {
 }
 
 export interface IWork {
+  page: number
   name: string
   location: string
   position: string
