@@ -7,7 +7,7 @@ import LocationIcon from '../../../icons/LocationIcon'
 import * as styles from '../../../../styles/commonStyles'
 
 const StyledWorkItem = styled.div`
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 `
 const Position = styled.div`
   font-weight: bold;

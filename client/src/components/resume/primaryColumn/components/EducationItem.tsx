@@ -15,7 +15,7 @@ const Degree = styled.div`
 const LineContainer = styled.div`
   display: flex;
   align-items: left;
-  padding-bottom: 5px;
+  padding-bottom: 3px;
 `
 const Institution = styled.div`
   font-weight: bold;
@@ -30,6 +30,9 @@ const Dates = styled.div`
   margin-right: 7px;
   font-style: italic;
   color: ${styles.text.color.secondary};
+`
+const List = styled.ul`
+  margin-top: 3px;
 `
 
 interface IEducationItemProps {
@@ -47,6 +50,11 @@ const EducationItem = ({ key, item }: IEducationItemProps) => (
       <CalendarIcon />
       <Dates>{`${item.startDate} - ${item.endDate}`}</Dates>
     </LineContainer>
+    {item.result && (
+      <List>
+        <li>{`Result: ${item.result}`}</li>
+      </List>
+    )}
   </StyledEducationItem>
 )
 

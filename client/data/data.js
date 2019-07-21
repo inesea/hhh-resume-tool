@@ -1,6 +1,4 @@
-import mock from './mockResume.json'
-// import real from './realResume.json'
+import resume from './mockResume.json'
+// import resume from './realResume.json'
 
-const data = mock
-
-export default data
+export default resume

@@ -18,7 +18,7 @@ interface StyledProps {
 
 const StyledForPage1 = styled.div<StyledProps>`
   background: ${styles.background.secondary};
-  padding-top: 200px;
+  padding-top: 220px;
   padding-left: 15px;
   margin-top: ${props => (props.printable ? '-20px' : '0px')};
 `

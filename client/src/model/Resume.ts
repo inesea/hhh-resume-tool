@@ -43,5 +43,6 @@ export interface IEducation {
   startDate: string
   endDate: string
   gpa: string
+  result?: string
   courses: string[]
 }

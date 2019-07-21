@@ -8,10 +8,10 @@ import EducationSection from './components/EducationSection'
 import { IResume } from '../../../model/Resume'
 
 const StyledForPage1 = styled.div`
-  padding-top: 120px;
+  padding-top: 130px;
 `
 const StyledForPage2 = styled.div`
-  padding-top: 150px;
+  padding-top: 140px;
 `
 
 interface IPrimaryColumnProps {
