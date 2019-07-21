@@ -29,7 +29,7 @@ interface IPreviewPageProps {
 
 const PreviewPage = ({ resume }: IPreviewPageProps) => (
   <StyledPreviewPage>
-    <ExportButton />
+    <ExportButton fileName={`Resume - ${resume.basics.name}`} />
 
     <PageImitation>
       <Page1 resume={resume} printable={false} />
