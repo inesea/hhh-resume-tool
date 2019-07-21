@@ -11,7 +11,8 @@ export const text = {
     headingLarge: '24px'
   },
   letterSpacing: {
-    wide: '5px'
+    wide: '5px',
+    medium: '2.5px'
   },
   transform: {
     heading: 'uppercase'

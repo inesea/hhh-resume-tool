@@ -13,6 +13,7 @@ const Name = styled.div`
   font-size: ${styles.text.size.headingLarge};
   font-weight: bold;
   text-transform: ${styles.text.transform.heading};
+  letter-spacing: ${styles.text.letterSpacing.medium};
 `
 const ContactDetailsLine = styled.div`
   display: flex;
