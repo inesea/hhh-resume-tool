@@ -9,5 +9,6 @@
     "skipLibCheck": true
   },
   "exclude": ["data", "node_modules", "dist"],
-  "include": ["src/**/*"]
+  "include": ["src/**/*"],
+  "files": ["custom.d.ts"]
 }

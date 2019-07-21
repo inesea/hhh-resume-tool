@@ -1,9 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import * as styles from '../../../../styles/commonStyles'
+
 const Heading = styled.div`
-  letter-spacing: 5px;
-  text-transform: uppercase;
+  letter-spacing: ${styles.text.letterSpacing.wide};
+  text-transform: ${styles.text.transform.heading};
   font-size: 14px;
   font-weight: bold;
 `

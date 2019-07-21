@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import { IEducation } from '../../../../model/Resume'
 
+import * as styles from '../../../../styles/commonStyles'
+
 const StyledEducationItem = styled.div`
   padding-bottom: 20px;
 `
@@ -14,7 +16,7 @@ const LineContainer = styled.div`
 `
 const Institution = styled.div`
   font-weight: bold;
-  color: steelBlue;
+  color: ${styles.text.color.highlight};
   float: left;
   margin-right: 7px;
 `

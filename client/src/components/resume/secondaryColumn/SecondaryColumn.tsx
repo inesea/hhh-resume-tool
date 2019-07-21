@@ -4,6 +4,8 @@ import SecondarySection from './components/SecondarySection'
 import { IResume } from '../../../model/Resume'
 import { A4_HEIGHT_CM } from '../../../constants/constants'
 
+import * as styles from '../../../styles/commonStyles'
+
 interface ISecondaryColumnProps {
   resume: IResume
   page: number
@@ -15,14 +17,14 @@ interface StyledProps {
 }
 
 const StyledForPage1 = styled.div<StyledProps>`
-  background: #d4e4ed;
+  background: ${styles.background.secondary};
   padding-top: 200px;
   padding-left: 15px;
   margin-top: ${props => (props.printable ? '-20px' : '0px')};
 `
 
 const StyledForPage2 = styled.div<StyledProps>`
-  background: #d4e4ed;
+  background: ${styles.background.secondary};
   height: ${A4_HEIGHT_CM + 4}cm;
   margin-bottom: ${props => (props.printable ? `-20px` : '0px')};
 `

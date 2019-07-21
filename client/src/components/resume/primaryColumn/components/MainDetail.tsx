@@ -1,17 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import * as styles from '../../../../styles/commonStyles'
+
 const StyledMainDetail = styled.div`
   margin-bottom: 70px;
 `
 const Name = styled.div`
-  font-size: 24px;
+  font-size: ${styles.text.size.headingLarge};
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: ${styles.text.transform.heading};
 `
 const ContactDetails = styled.div`
-  font-size: 12px;
-  color: grey;
+  font-size: ${styles.text.size.secondary};
+  color: ${styles.text.color.secondary};
   padding-bottom: 15px;
 `
 const SummaryText = styled.div`

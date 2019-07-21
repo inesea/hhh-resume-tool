@@ -1,10 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import * as styles from '../../../../styles/commonStyles'
+
 const StyledSectionTitle = styled.div`
-  letter-spacing: 5px;
-  text-transform: uppercase
-  font-size: 14px;
+  letter-spacing: ${styles.text.letterSpacing.wide};
+  text-transform: ${styles.text.transform.heading};
+  font-size: ${styles.text.size.headingMedium};
   font-weight: bold;
 `
 
