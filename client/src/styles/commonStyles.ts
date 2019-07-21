@@ -1,8 +1,8 @@
 export const text = {
   color: {
-    main: '#060606',
-    secondary: '#8E8E90',
-    highlight: '#36A8D1'
+    main: '#020202',
+    secondary: '#5E5E5E',
+    highlight: '#019FD8'
   },
   size: {
     main: '13px',
@@ -25,6 +25,6 @@ export const text = {
 }
 
 export const background = {
-  main: 'white',
-  secondary: '#d4e4ed'
+  main: '#FFFFFF',
+  secondary: '#C1E4F2'
 }

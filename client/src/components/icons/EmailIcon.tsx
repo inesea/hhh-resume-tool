@@ -1,20 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import LocationSvg from './location.svg'
+import EmailSvg from '../../icons/email.svg'
 
 const IconContainer = styled.div`
-  padding: 0 2px 0 2px;
+  padding: 0 4px 0 0px;
 `
 
-const LocationIcon = () => {
+const EmailIcon = () => {
   return (
     <IconContainer>
       <div>
-        <LocationSvg />
+        <EmailSvg />
       </div>
     </IconContainer>
   )
 }
 
-export default LocationIcon
+export default EmailIcon

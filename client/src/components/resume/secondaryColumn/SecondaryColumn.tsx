@@ -48,26 +48,20 @@ const SecondaryColumn = ({
     <>
       {page === 1 && (
         <StyledForPage1 printable={printable}>
-          {languagesList && (
+          {languagesList && languagesList.length != 0 && (
             <SecondarySection title="Languages" listItems={languagesList} />
           )}
-          {skills && (
-            <SecondarySection
-              title="Tools &amp; Technologies"
-              listItems={skills}
-            />
+          {skills && skills.length != 0 && (
+            <SecondarySection title="Skills" listItems={skills} />
           )}
-          {certificatesList && (
+          {certificatesList && certificatesList.length != 0 && (
             <SecondarySection
               title="Certificates"
               listItems={certificatesList}
             />
           )}
-          {interests && (
-            <SecondarySection
-              title="Personal Interests"
-              listItems={interests}
-            />
+          {interests && interests.length != 0 && (
+            <SecondarySection title="Interests" listItems={interests} />
           )}
         </StyledForPage1>
       )}

@@ -3,6 +3,9 @@ import styled from 'styled-components'
 
 import * as styles from '../../../../styles/commonStyles'
 
+import EmailIcon from '../../../icons/EmailIcon'
+import PhoneIcon from '../../../icons/PhoneIcon'
+
 const StyledMainDetail = styled.div`
   margin-bottom: 70px;
 `
@@ -11,13 +14,19 @@ const Name = styled.div`
   font-weight: bold;
   text-transform: ${styles.text.transform.heading};
 `
-const ContactDetails = styled.div`
+const ContactDetailsLine = styled.div`
+  display: flex;
+  align-items: left;
   font-size: ${styles.text.size.secondary};
-  color: ${styles.text.color.secondary};
+  color: ${styles.text.color.main};
   padding-bottom: 15px;
 `
+
 const SummaryText = styled.div`
   text-align: justify;
+`
+const ContactDetailContainer = styled.div`
+  margin-right: 9px;
 `
 
 interface IMainDetailProps {
@@ -35,7 +44,12 @@ const MainDetail = ({
 }: IMainDetailProps) => (
   <StyledMainDetail>
     <Name>{name}</Name>
-    <ContactDetails>{`${email} | ${phoneNumber}`}</ContactDetails>
+    <ContactDetailsLine>
+      <EmailIcon />
+      <ContactDetailContainer>{email}</ContactDetailContainer>
+      <PhoneIcon />
+      <ContactDetailContainer>{phoneNumber}</ContactDetailContainer>
+    </ContactDetailsLine>
     <SummaryText>{summaryText}</SummaryText>
   </StyledMainDetail>
 )

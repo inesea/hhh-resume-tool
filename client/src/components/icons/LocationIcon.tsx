@@ -1,20 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import CalendarSvg from './calendar.svg'
+import LocationSvg from '../../icons/location.svg'
 
 const IconContainer = styled.div`
-  padding: 0 4px 0 2px;
+  padding: 0 2px 0 2px;
 `
 
-const CalendarIcon = () => {
+const LocationIcon = () => {
   return (
     <IconContainer>
       <div>
-        <CalendarSvg />
+        <LocationSvg />
       </div>
     </IconContainer>
   )
 }
 
-export default CalendarIcon
+export default LocationIcon

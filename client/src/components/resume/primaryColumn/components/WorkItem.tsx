@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { IWork } from '../../../../model/Resume'
-import CalendarIcon from '../../../../icons/CalendarIcon'
-import LocationIcon from '../../../../icons/LocationIcon'
+import CalendarIcon from '../../../icons/CalendarIcon'
+import LocationIcon from '../../../icons/LocationIcon'
 
 import * as styles from '../../../../styles/commonStyles'
 
@@ -15,15 +15,12 @@ const Position = styled.div`
 const LineContainer = styled.div`
   display: flex;
   align-items: left;
-  padding-bottom: 5px;
 `
-
 const Company = styled.div`
   font-weight: bold;
   color: ${styles.text.color.highlight};
   margin-right: 5px;
 `
-
 const Location = styled.div`
   margin-right: 8px;
   color: ${styles.text.color.secondary};
@@ -33,9 +30,11 @@ const Dates = styled.div`
   font-style: italic;
   color: ${styles.text.color.secondary};
 `
-const Highlight = styled.li`
-  padding-left: 30px;
+const List = styled.ul`
+  margin-top: 6px;
+  list-style-position: outside;
 `
+const Highlight = styled.li``
 
 interface IWorkItemProps {
   key: string
@@ -52,9 +51,11 @@ const WorkItem = ({ key, item }: IWorkItemProps) => (
       <CalendarIcon />
       <Dates>{`${item.startDate} - ${item.endDate}`}</Dates>
     </LineContainer>
-    {item.highlights.map(highlight => (
-      <Highlight>{highlight}</Highlight>
-    ))}
+    <List>
+      {item.highlights.map(highlight => (
+        <Highlight>{highlight}</Highlight>
+      ))}
+    </List>
   </StyledWorkItem>
 )
 
