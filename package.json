@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "name": "ineses-resume-tool",
+  "version": "0.0.0",
+  "description": "ineses resume tool",
+  "main": "",
+  "scripts": {
+    "postinstall": "npm install --prefix client && npm install --prefix server",
+    "start": "concurrently 'npm run start:client' 'npm run start:server'",
+    "start:client": "cd client && npm start",
+    "start:server": "cd server && npm start"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^4.1.1"
+  }
+}
