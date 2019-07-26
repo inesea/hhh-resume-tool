@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import * as styles from '../../../../styles/commonStyles'
+import * as styles from '../../../styles/commonStyles'
 
 const Heading = styled.div`
   letter-spacing: ${styles.text.letterSpacing.wide};
@@ -9,11 +9,11 @@ const Heading = styled.div`
   font-size: 14px;
   font-weight: bold;
 `
-const Divider = styled.hr`
+const DividerLine = styled.hr`
   height: 1px;
   padding: 0;
   border: 0;
-  border-top: 1px solid rgb(220, 220, 220);
+  border-top: 1px solid #dcdcdc;
   margin-bottom: 20px;
 `
 
@@ -21,11 +21,11 @@ interface ISectionTitleProps {
   children: string
 }
 
-const SectionTitle = ({ children }: ISectionTitleProps) => (
+const PrimarySectionHeading = ({ children }: ISectionTitleProps) => (
   <div>
     <Heading>{children}</Heading>
-    <Divider />
+    <DividerLine />
   </div>
 )
 
-export default SectionTitle
+export default PrimarySectionHeading

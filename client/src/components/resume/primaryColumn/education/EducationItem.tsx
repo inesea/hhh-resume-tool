@@ -1,22 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
-import { IWork } from '../../../../model/Resume'
-import CalendarIcon from '../../../icons/CalendarIcon'
-import LocationIcon from '../../../icons/LocationIcon'
+import { IEducation } from '../../../../model/Resume'
 
 import * as styles from '../../../../styles/commonStyles'
+import LocationIcon from '../../../icons/LocationIcon'
+import CalendarIcon from '../../../icons/CalendarIcon'
 
-const StyledWorkItem = styled.div`
+const StyledEducationItem = styled.div`
   padding-bottom: 20px;
 `
-const Position = styled.div`
+const Degree = styled.div`
   font-weight: bold;
 `
 const LineContainer = styled.div`
   display: flex;
   align-items: left;
+  padding-bottom: 3px;
 `
-const Company = styled.div`
+const Institution = styled.div`
   font-weight: bold;
   color: ${styles.text.color.highlight};
   margin-right: 5px;
@@ -31,32 +32,29 @@ const Dates = styled.div`
   color: ${styles.text.color.secondary};
 `
 const List = styled.ul`
-  margin-top: 6px;
-  list-style-position: outside;
+  margin-top: 3px;
 `
-const Highlight = styled.li``
 
-interface IWorkItemProps {
-  key: string
-  item: IWork
+interface IEducationItemProps {
+  item: IEducation
 }
 
-const WorkItem = ({ key, item }: IWorkItemProps) => (
-  <StyledWorkItem key={key}>
-    <Position>{item.position}</Position>
+const EducationItem = ({ item }: IEducationItemProps) => (
+  <StyledEducationItem>
+    <Degree>{`${item.studyType} ${item.area}`}</Degree>
     <LineContainer>
-      <Company>{item.name}</Company>
+      <Institution>{item.institution}</Institution>
       <LocationIcon />
       <Location>{item.location}</Location>
       <CalendarIcon />
       <Dates>{`${item.startDate} - ${item.endDate}`}</Dates>
     </LineContainer>
-    <List>
-      {item.highlights.map(highlight => (
-        <Highlight>{highlight}</Highlight>
-      ))}
-    </List>
-  </StyledWorkItem>
+    {item.result && (
+      <List>
+        <li>{`Result: ${item.result}`}</li>
+      </List>
+    )}
+  </StyledEducationItem>
 )
 
-export default WorkItem
+export default EducationItem

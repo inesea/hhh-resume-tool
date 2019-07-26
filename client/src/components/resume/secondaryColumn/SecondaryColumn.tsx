@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import SecondarySection from './components/SecondarySection'
+import SecondarySection from './SecondarySection'
 import { IResume } from '../../../model/Resume'
 import { A4_HEIGHT_CM } from '../../../constants/constants'
 

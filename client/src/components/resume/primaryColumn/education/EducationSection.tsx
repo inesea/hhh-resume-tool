@@ -1,7 +1,7 @@
 import React from 'react'
 
-import MainSectionWrapper from './MainSectionWrapper'
-import PrimarySectionHeading from './PrimarySectionHeading'
+import MainSectionWrapper from '../main/MainSectionWrapper'
+import PrimarySectionHeading from '../PrimarySectionHeading'
 import EducationItem from './EducationItem'
 import { IEducation } from '../../../../model/Resume'
 

@@ -1,7 +1,7 @@
 import React from 'react'
 
-import MainSectionWrapper from './MainSectionWrapper'
-import PrimarySectionHeading from './PrimarySectionHeading'
+import MainSectionWrapper from '../main/MainSectionWrapper'
+import PrimarySectionHeading from '../PrimarySectionHeading'
 import WorkItem from './WorkItem'
 import { IWork } from '../../../../model/Resume'
 
@@ -20,7 +20,7 @@ const WorkSection = ({
     )}
     {workList.map(workItem => (
       <WorkItem
-        key={`${workItem.position}-${workItem.startDate}`}
+        key={`${workItem.position}-${workItem.startDate}-${workItem.endDate}`}
         item={workItem}
       />
     ))}

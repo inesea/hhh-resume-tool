@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import * as styles from '../../../../styles/commonStyles'
+import * as styles from '../../../styles/commonStyles'
 
 const StyledSectionTitle = styled.div`
   letter-spacing: ${styles.text.letterSpacing.wide};

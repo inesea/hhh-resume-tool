@@ -1,5 +1,5 @@
 export interface IResume {
-  meta: object
+  meta?: object
   basics: {
     name: string
     email: string

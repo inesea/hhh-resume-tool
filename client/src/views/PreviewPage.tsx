@@ -14,7 +14,7 @@ const StyledPreviewPage = styled.div`
   margin-bottom: 40px;
 `
 
-const SomeSpaceBetween = styled.div`
+const Divider = styled.div`
   height: 40px;
 `
 const PageImitation = styled.div`
@@ -35,7 +35,7 @@ const PreviewPage = ({ resume }: IPreviewPageProps) => (
       <Page1 resume={resume} printable={false} />
     </PageImitation>
 
-    <SomeSpaceBetween />
+    <Divider />
 
     <PageImitation>
       <Page2 resume={resume} printable={false} />

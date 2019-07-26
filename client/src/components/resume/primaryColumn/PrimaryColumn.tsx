@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import MainDetail from './components/MainDetail'
-import WorkSection from './components/WorkSection'
-import EducationSection from './components/EducationSection'
+import MainDetail from './main/MainDetail'
+import WorkSection from './work/WorkSection'
+import EducationSection from './education/EducationSection'
 
 import { IResume } from '../../../model/Resume'
 

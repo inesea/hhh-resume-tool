@@ -22,7 +22,8 @@ const exportToPdf = (fileName: string) => {
       savePdfFile(response.data, fileName)
     })
     .catch(error => {
-      console.log({ errorResult: error })
+      console.log({ error })
+      alert(error.message)
     })
 }
 
