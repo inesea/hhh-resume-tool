@@ -13,4 +13,4 @@ npm install
 npm start
 ```
 
-Run app with your own details by updating file `data/resume.json` accordingly.
+Run app with your own details by updating file `client/data/resume.json` accordingly.
