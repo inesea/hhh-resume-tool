@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import CalendarSvg from '../../icons/calendar.svg'
+import CalendarSvg from '../../assets/icons/calendar.svg'
 
 const IconContainer = styled.div`
   padding: 0 4px 0 2px;

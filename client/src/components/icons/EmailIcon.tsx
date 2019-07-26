@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import EmailSvg from '../../icons/email.svg'
+import EmailSvg from '../../assets/icons/email.svg'
 
 const IconContainer = styled.div`
   padding: 0 4px 0 0px;
