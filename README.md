@@ -6,9 +6,11 @@ This is Inese's HHH (humble-hacky-handy) resume tool that contains:
 - JSON resume data (example)
 - export to PDF service
 
-Install dependencies and run with:
+Install dependencies and run app with commands:
 
 ```
 npm install
 npm start
 ```
+
+Run app with your own details by updating file `data/resume.json` accordingly.
