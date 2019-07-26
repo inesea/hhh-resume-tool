@@ -1,14 +1,14 @@
 {
   "private": true,
-  "name": "ineses-resume-tool",
+  "name": "hhh-resume-tool",
   "version": "0.0.0",
-  "description": "ineses resume tool",
+  "description": "hhh resume tool",
   "main": "",
   "scripts": {
     "postinstall": "npm install --prefix client && npm install --prefix server",
     "start": "concurrently 'npm run start:client' 'npm run start:server'",
-    "start:client": "cd client && npm start",
-    "start:server": "cd server && npm start"
+    "start:client": "npm start --prefix client",
+    "start:server": "npm start --prefix server"
   },
   "license": "UNLICENSED",
   "dependencies": {},

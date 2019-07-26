@@ -1,12 +1,13 @@
 {
   "private": true,
-  "name": "cv-template",
+  "name": "hhh-resume-tool-frontend",
   "version": "0.0.0",
-  "description": "cv template",
+  "description": "hhh resume tool frontend",
   "main": "index.tsx",
   "scripts": {
-    "start": "rm -rf ./dist && parcel src/index.html",
-    "eslint": "npx eslint src/**/*.ts*",
+    "clean": "rm -rf node_modules && rm -f package-lock.json",
+    "start": "parcel src/index.html",
+    "eslint": "eslint src/**/*.ts*",
     "type-check": "tsc"
   },
   "license": "UNLICENSED",
