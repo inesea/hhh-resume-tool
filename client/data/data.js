@@ -1,4 +1,3 @@
-import resume from './mockResume.json'
-// import resume from './realResume.json'
+import resume from './resume.json'
 
 export default resume

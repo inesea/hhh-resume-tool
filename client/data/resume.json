@@ -5,19 +5,9 @@
   },
   "basics": {
     "name": "Inese Avota",
-    "label": "Software Engineer",
-    "image": "",
     "email": "some.invalidemail@someemail.com",
     "phone": "+44 444 4444 444",
-    "url": "",
     "summary": "Software engineer trying to build a cv template... Software engineer trying to build a cv template... Software engineer trying to build a cv template... Software engineer trying to build a cv template... Software engineer trying to build a cv template... Software engineer trying to build a cv template... Software engineer trying to build a cv template... Software engineer trying to build a cv template... Software engineer trying to build a cv template... ",
-    "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "",
-      "countryCode": "",
-      "region": ""
-    },
     "profiles": [
       {
         "network": "Linkedin",
@@ -36,12 +26,9 @@
       "page": 1,
       "name": "Lorem Ipsum",
       "location": "London, UK",
-      "description": "",
       "position": "JavaScript Developer",
-      "url": "",
       "startDate": "March 2016",
       "endDate": "December 2018",
-      "summary": "",
       "highlights": [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
         "Tempor incididunt ut labore et dolore magna aliqua",
@@ -55,12 +42,9 @@
       "page": 1,
       "name": "Dolor Sit Amet",
       "location": "Helsinki, FI",
-      "description": "",
       "position": "Softare Engineer",
-      "url": "",
       "startDate": "May 2014",
       "endDate": "September 2016",
-      "summary": "",
       "highlights": [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
         "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat",
@@ -73,12 +57,9 @@
       "page": 1,
       "name": "Dolor Sit Amet",
       "location": "Helsinki, FI",
-      "description": "",
       "position": "Softare Engineer",
-      "url": "",
       "startDate": "May 2014",
       "endDate": "September 2016",
-      "summary": "",
       "highlights": [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
         "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat",
@@ -93,12 +74,9 @@
       "page": 2,
       "name": "Dolor Sit Amet",
       "location": "Helsinki, FI",
-      "description": "",
       "position": "Softare Engineer",
-      "url": "",
       "startDate": "May 2014",
       "endDate": "September 2016",
-      "summary": "",
       "highlights": [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
         "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat",
@@ -111,12 +89,9 @@
       "page": 2,
       "name": "Dolor Sit Amet",
       "location": "Helsinki, FI",
-      "description": "",
       "position": "Softare Engineer",
-      "url": "",
       "startDate": "May 2014",
       "endDate": "September 2016",
-      "summary": "",
       "highlights": [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
         "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat",
@@ -136,9 +111,7 @@
       "studyType": "MSc",
       "startDate": "June 2011",
       "endDate": "January 2014",
-      "gpa": "4.5",
-      "result": "Distinction",
-      "courses": []
+      "result": "Distinction"
     },
     {
       "institution": "University of Loremipsum",
@@ -146,9 +119,7 @@
       "area": "Software Engineering",
       "studyType": "BSc",
       "startDate": "June 2016",
-      "endDate": "January 2014",
-      "gpa": "4.5",
-      "courses": []
+      "endDate": "January 2014"
     }
   ],
   "languages": [
