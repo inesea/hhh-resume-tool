@@ -13,6 +13,6 @@ npm install
 npm start
 ```
 
-Open the app in the browser at `http://localhost:1234/`.
+Open app in the browser at `http://localhost:1234/`.
 
 If you'd like to load your own resume details - update file `client/data/resume.json`.
