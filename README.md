@@ -15,4 +15,4 @@ npm start
 
 Open the app in the browser at `http://localhost:1234/`.
 
-Load your own resume details by updating file `client/data/resume.json`.
+If you'd like to load your own resume details - update file `client/data/resume.json`.
