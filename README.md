@@ -13,4 +13,6 @@ npm install
 npm start
 ```
 
+By default it should run on `http://localhost:1234/`.
+
 Run app with your own details by updating file `client/data/resume.json` accordingly.
